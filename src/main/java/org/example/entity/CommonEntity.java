@@ -18,6 +18,7 @@ public class CommonEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Column(length = 65535, columnDefinition = "TEXT")
     private String description;
     private String price;
     private String imgURL;
